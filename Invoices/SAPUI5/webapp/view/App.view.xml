@@ -1,8 +1,13 @@
-<mvc:View controllerName="DFFspace.SAPUI5.controller.App"
-xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" >
-<Button text="{i18n>showHelloButtonText}" press=".onShowHello"></Button>
-<Input value="{/recipient/name}"
-    description="Hello {/recipient/name}"
-    valueLiveUpdate="true"
-    width="60%"></Input>
+<mvc:View controllerName="DFFspace.SAPUI5.controller.App" 
+xmlns="sap.m" 
+xmlns:mvc="sap.ui.core.mvc" 
+displayBlock="true">
+    <App>
+        <Page title="{i18n>apptitle}">
+            <content>
+                <Button text="{i18n>showHelloButtonText}" press=".onShowHello" />
+                <Input value="{/recipient/name}" description="Hello {/recipient/name}" valueLiveUpdate="true" width="60%" />
+            </content>
+        </Page>
+    </App>
 </mvc:View>
