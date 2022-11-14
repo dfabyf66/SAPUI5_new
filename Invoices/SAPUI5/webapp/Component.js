@@ -16,7 +16,7 @@ sap.ui.define([
        return UIComponent.extend("DFFspace.SAPUI5.Component", {
 
              metadata: {
-                 manifest : "json"
+                 manifest : "json",
                 // "rootView":  {
                 // "viewname": "DFFspace.SAPUI5.view.App",
                 // "type": "XML",
@@ -37,7 +37,7 @@ sap.ui.define([
                 var i18nModel = new ResourceModel({ bundleName: "DFFspace.SAPUI5.i18n.i18n" });
                 this.setModel(i18nModel, "i18n");
                 
-                this._helloDialog = new HelloDialog(this.getRootControl())
+                this._helloDialog = new HelloDialog(this.getRootControl());
 
             } ,
 
@@ -48,7 +48,7 @@ sap.ui.define([
             },
 
             openHelloDialog: function() {
-                this._helloDialog().open();
+                this._helloDialog.open();
             }
 
 

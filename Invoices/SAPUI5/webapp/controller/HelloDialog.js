@@ -22,7 +22,7 @@ sap.ui.define([
                 delete this._oView;
             },
 
-            open: function () {
+            open : function () {
                 const oView = this._oView;
                 //create dialog lazily
                 if (!oView.byId("helloDialog")) {
@@ -33,7 +33,7 @@ sap.ui.define([
                             oView.byId("helloDialog").close();
                         }
 
-                    }
+                    };
                     // load asyncronous XML fragment
                     Fragment.load({
                         id: oView.getId(),

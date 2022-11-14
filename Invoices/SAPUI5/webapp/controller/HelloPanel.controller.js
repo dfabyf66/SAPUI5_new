@@ -1,7 +1,6 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
-    // ,
-    // "sap/m/MessageToast",
+    "sap/ui/core/mvc/Controller",
+     "sap/m/MessageToast"
     // "sap/ui/core/Fragment"
 
     
@@ -33,7 +32,7 @@ sap.ui.define([
 
             onOpenDialog: function() {
 
-                this.getOwnerComponent().onOpenDialog();
+                this.getOwnerComponent().openHelloDialog();
 
                 // const oView = this.getView();
 

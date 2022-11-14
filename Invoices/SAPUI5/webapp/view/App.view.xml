@@ -3,6 +3,12 @@
     <App>
         <pages>
             <Page title="{i18n>apptitle}" >
+                <headerContent>
+                  <Button id="helloDialogButton"
+              icon="sap-icon://action"
+               press=".onOpenDialogHeader" 
+               class="sapUiSmallMarginEnd" />
+                </headerContent>
                 <content>
                    <mvc:XMLView viewName="DFFspace.SAPUI5.view.HelloPanel"/>
                 </content>
