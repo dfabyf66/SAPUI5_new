@@ -5,7 +5,18 @@
           headerText="{i18n>invoiceListTitle}" 
           class="sapUiResposiveMargin" 
           width="auto" 
-          items="{invoices>/Invoices}">
+          items="{ path : 'invoices>/Invoices',
+                   sorter : { path : 'ShipperName',
+                   group : true }
+                   
+          }">
+            <headerToolbar>
+            <Toolbar >
+                <Title text="{i18n>invoiceListTitle}"/>
+                <ToolbarSpacer/>
+                <SearchField width="50%" search=".onFilterInvoices"/>
+            </Toolbar>
+        </headerToolbar>
         <items>
             <ObjectListItem title="{invoices>Quantity} x {invoices>ProductName}"
             number="{ parts : [ {path : 'invoices>ExtendedPrice'},
