@@ -1,5 +1,5 @@
 {
-  "_version": "1.1.0",
+  "_version": "1.45.0",
   "sap.app": {
     "id": "DFFspace.SAPUI5",
     "type": "application",
@@ -12,8 +12,8 @@
     "resources": "resources.json",
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
-      "version": "1.8.0",
-      "toolsId": "d93a6f24-137c-4775-b07d-8df1bade3fba"
+      "version": "1.8.1",
+      "toolsId": "42f02c4d-4042-48eb-849e-f82a1476b0f3"
     },
     "dataSources": {
       "mainService": {
@@ -23,14 +23,6 @@
           "annotations": [],
           "localUri": "localService/metadata.xml",
           "odataVersion": "2.0"
-        }
-      },
-      "Northwind.svc": {
-        "uri": "Northwind/V2/Northwind/Northwind.svc/",
-        "type": "OData",
-        "settings": {
-          "odataVersion": "2.0",
-          "localUri": "localService/metadata.xml"
         }
       }
     }
@@ -52,9 +44,9 @@
     }
   },
   "sap.ui5": {
-    "flexEnabled": false,
+    "flexEnabled": true,
     "dependencies": {
-      "minUI5Version": "1.107.1",
+      "minUI5Version": "1.108.2",
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
@@ -77,18 +69,10 @@
           "bundleName": "DFFspace.SAPUI5.i18n.i18n"
         }
       },
-      "invoices": {
-        "type": "sap.ui.model.json.JSONModel",
-        "uri": "Invoices.json"
-      },
       "": {
-        "dataSource": "Northwind.svc",
+        "dataSource": "mainService",
         "preload": true,
-        "settings": {
-          "defaultBindingMode": "TwoWay",
-          "defaultCountMode": "Inline",
-          "refreshAfterChange": false
-        }
+        "settings": {}
       }
     },
     "resources": {
@@ -122,8 +106,8 @@
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "App",
-          "viewName": "App"
+          "viewId": "View1",
+          "viewName": "View1"
         }
       }
     },
