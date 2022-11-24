@@ -16,7 +16,6 @@
 			"version": "1.40.12"
 		}
 	},
-	
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -33,7 +32,6 @@
 			"phone": true
 		}
 	},
-
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
@@ -62,14 +60,16 @@
 				}
 			},
 			"invoices": {
-                "type": "sap.ui.model.json.JSONModel",
-                "uri": "Invoices.json"
-            }
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "Invoices.json"
+			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
@@ -81,11 +81,15 @@
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [{
-				"name": "RouteApp",
-				"pattern": "RouteApp",
-				"target": ["TargetApp"]
-			}],
+			"routes": [
+				{
+					"name": "RouteApp",
+					"pattern": "RouteApp",
+					"target": [
+						"TargetApp"
+					]
+				}
+			],
 			"targets": {
 				"TargetApp": {
 					"viewType": "XML",
