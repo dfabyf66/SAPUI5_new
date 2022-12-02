@@ -1,9 +1,8 @@
 {
-  "version": "0.2.0",
   "configurations": [
     {
-      "name": "SAPUI5 - Run  Invoices",
-      "cwd": "${workspaceFolder}/SAPUI5",
+      "name": "Run Invoices2",
+      "cwd": "${workspaceFolder}/Invoices2/SAPUI5",
       "runtimeArgs": [
         "fiori",
         "run"
@@ -13,7 +12,7 @@
       "runtimeExecutable": "npx",
       "args": [
         "--open",
-        "Index.html"
+        "index.html"
       ],
       "windows": {
         "runtimeExecutable": "npx.cmd"
@@ -22,12 +21,12 @@
       "internalConsoleOptions": "openOnSessionStart",
       "outputCapture": "std",
       "env": {
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/Invoices/SAPUI5\"}",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/Invoices2/SAPUI5\"}",
         "FIORI_TOOLS_BACKEND_CONFIG": "[{\"destination\":\"Northwind\",\"path\":\"/V2\"}]",
-        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-        "FIORI_TOOLS_UI5_VERSION": "",
-        "FIORI_TOOLS_UI5_URI": "https://ui5.sap.com"
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
       }
     }
-  ]
+  ],
+  "compounds": [],
+  "version": "0.2.0"
 }

@@ -1,4 +1,4 @@
-<mvc:View controllerName="DFFspace.SAPUI5.controller.InvoicesList"
+<mvc:View controllerName="DFFspace2.SAPUI5.controller.InvoicesList"
           xmlns="sap.m" 
           xmlns:mvc="sap.ui.core.mvc">
     <List id="invoiceList"
@@ -26,10 +26,6 @@
                                       }}"
                             numberUnit="{currency>/usd}"
                             numberState="{= ${northwind>ExtendedPrice} > 50 ? 'Success' : 'Error'}">
-                <!-- <firstStatus>
-                    <ObjectStatus text="{ path: 'invoices>Status',
-                                          formatter : '.formatter.invoiceStatus' }"></ObjectStatus>
-                </firstStatus> -->
             </ObjectListItem>
         </items>
     </List>

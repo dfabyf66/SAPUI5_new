@@ -1,7 +1,7 @@
 {
   "_version": "1.12.0",
   "sap.app": {
-    "id": "DFFspace.SAPUI5",
+    "id": "DFFspace2.SAPUI5",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -17,13 +17,14 @@
     },
     "dataSources": {
       "mainService": {
-        "uri": "Northwind/V2/Northwind/Northwind.svc/",
+        "uri": "/V2/northwind/Northwind.svc/",
         "type": "OData",
         "settings": {
           "odataVersion": "2.0",
           "localUri": "localService/metadata.xml"
         }
       }
+     
     }
   },
   "sap.ui": {
@@ -45,7 +46,7 @@
   "sap.ui5": {
     "flexEnabled": false,
     "rootView": {
-      "viewName": "DFFspace.SAPUI5.view.App",
+      "viewName": "DFFspace2.SAPUI5.view.App",
       "type": "XML",
       "async": true,
       "id": "App"
@@ -66,7 +67,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "DFFspace.SAPUI5.i18n.i18n"
+          "bundleName": "DFFspace2.SAPUI5.i18n.i18n"
         }
       },
       "invoices": {
@@ -95,7 +96,7 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "DFFspace.SAPUI5.view",
+        "viewPath": "DFFspace2.SAPUI5.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
